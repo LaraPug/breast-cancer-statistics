@@ -52,11 +52,16 @@ This analysis generated the following outputs:
 - **Samples analyzed:** 155
 - **Genes analyzed:** 14,936
 - **Significant genes identified:** 4,064 (`adj.P.Val < 0.05` and `|logFC| > 1`)
+<img width="2400" height="1500" alt="01_expression_distribution" src="https://github.com/user-attachments/assets/94ded363-bffd-4317-a7ae-6c2fe97e83ea" />
+
+<img width="3000" height="2400" alt="03_top_genes_heatmap" src="https://github.com/user-attachments/assets/100a26c7-143e-4798-836b-3332f8459eda" />
+
 
 ### Generated Outputs
 - Figures: `results/figures/01_expression_distribution.png`, `results/figures/02_sample_means.png`, `results/figures/03_top_genes_heatmap.png`, `results/figures/04_correlation_matrix.png`, `results/figures/05_sample_dendrogram.png`, `results/figures/06_volcano_plot.png`
 - Tables: `results/tables/gene_statistics.csv`, `results/tables/sample_statistics.csv`, `results/tables/statistical_testing_results.csv`, `results/tables/significant_genes.csv`
-- Saved objects: `results/eset_raw.RData`, `results/eset_processed.RData`
+- Saved objects: `results/eset_raw.RData`, `results/eset_processed.RData
+
 
 ## Notes
 - `run_analysis.R` uses your local R library path for package loading.
