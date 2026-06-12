@@ -1,0 +1,5 @@
+.libPaths('C:/Users/Lara Pugnaloni/R/library')
+source('analysis/01_download_data.R')
+source('analysis/02_quality_control.R')
+source('analysis/03_exploratory_analysis.R')
+source('analysis/04_statistical_testing.R')

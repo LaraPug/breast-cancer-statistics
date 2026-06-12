@@ -25,30 +25,7 @@ This portfolio is built to showcase research-grade data analysis skills with a c
 │   └── tables/
 └── reports/
     └── analysis_report.html
-
-
 ```
-MIT License
-
-Copyright (c) 2026 Lara Pugnaloni
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 ## Installation
 Install the required R packages before running the analysis:
@@ -71,32 +48,15 @@ source("analysis/04_statistical_testing.R")
 ```
 
 ## Key Results
-They took samples before every treatment and compare:
-| Grupo                  |  n |
-| ---------------------- | -: |
-| Triple negativo (TNBC) | 41 |
-| HER2+                  | 30 |
-| Luminal A              | 29 |
-| Luminal B              | 30 |
-| Tejido mamario normal  | 11 |
-| Líneas celulares       | 14 |
-
+This analysis generated the following outputs:
 - **Samples analyzed:** 155
 - **Genes analyzed:** 14,936
 - **Significant genes identified:** 4,064 (`adj.P.Val < 0.05` and `|logFC| > 1`)
 
-The objective of the dataset was to compare gene expression among molecular subtypes of breast cancer and also against normal tissue.
-
-<img width="2400" height="1500" alt="01_expression_distribution" src="https://github.com/user-attachments/assets/94ded363-bffd-4317-a7ae-6c2fe97e83ea" />
-
-<img width="3000" height="2400" alt="03_top_genes_heatmap" src="https://github.com/user-attachments/assets/100a26c7-143e-4798-836b-3332f8459eda" />
-
-
 ### Generated Outputs
 - Figures: `results/figures/01_expression_distribution.png`, `results/figures/02_sample_means.png`, `results/figures/03_top_genes_heatmap.png`, `results/figures/04_correlation_matrix.png`, `results/figures/05_sample_dendrogram.png`, `results/figures/06_volcano_plot.png`
 - Tables: `results/tables/gene_statistics.csv`, `results/tables/sample_statistics.csv`, `results/tables/statistical_testing_results.csv`, `results/tables/significant_genes.csv`
-- Saved objects: `results/eset_raw.RData`, `results/eset_processed.RData
-
+- Saved objects: `results/eset_raw.RData`, `results/eset_processed.RData`
 
 ## Notes
 - `run_analysis.R` uses your local R library path for package loading.
@@ -112,4 +72,3 @@ The objective of the dataset was to compare gene expression among molecular subt
 
 ## Author
 Lara Pugnaloni
-

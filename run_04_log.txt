@@ -1,0 +1,16 @@
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading processed data...
+Clustering samples to define groups...
+Fitting linear model with limma...
+Number significant genes: 4064 
+Saved: results/figures/06_volcano_plot.png

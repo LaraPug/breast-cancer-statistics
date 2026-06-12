@@ -1,0 +1,7 @@
+.libPaths('C:/Users/Lara Pugnaloni/R/library')
+library(GEOquery)
+cat('Starting minimal GEO download test\n')
+gset <- getGEO('GSE45827', GSEMatrix = TRUE, AnnotGPL = TRUE)
+cat('Downloaded. Object class:', class(gset), '\n')
+cat('Length:', length(gset), '\n')
+if (is.list(gset)) cat('First element class:', class(gset[[1]]), '\n')
