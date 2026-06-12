@@ -71,10 +71,22 @@ source("analysis/04_statistical_testing.R")
 ```
 
 ## Key Results
-This analysis generated the following outputs:
+They took samples before every treatment and compare:
+| Grupo                  |  n |
+| ---------------------- | -: |
+| Triple negativo (TNBC) | 41 |
+| HER2+                  | 30 |
+| Luminal A              | 29 |
+| Luminal B              | 30 |
+| Tejido mamario normal  | 11 |
+| Líneas celulares       | 14 |
+
 - **Samples analyzed:** 155
 - **Genes analyzed:** 14,936
 - **Significant genes identified:** 4,064 (`adj.P.Val < 0.05` and `|logFC| > 1`)
+
+The objective of the dataset was to compare gene expression among molecular subtypes of breast cancer and also against normal tissue.
+
 <img width="2400" height="1500" alt="01_expression_distribution" src="https://github.com/user-attachments/assets/94ded363-bffd-4317-a7ae-6c2fe97e83ea" />
 
 <img width="3000" height="2400" alt="03_top_genes_heatmap" src="https://github.com/user-attachments/assets/100a26c7-143e-4798-836b-3332f8459eda" />
