@@ -52,6 +52,7 @@ This analysis generated the following outputs:
 - **Samples analyzed:** 155
 - **Genes analyzed:** 14,936
 - **Significant genes identified:** 4,064 (`adj.P.Val < 0.05` and `|logFC| > 1`)
+
 The objective of the dataset was to compare gene expression among molecular subtypes of breast cancer and also against normal tissue.
 <img width="2400" height="1500" alt="01_expression_distribution" src="https://github.com/user-attachments/assets/45abbc91-16be-4af5-8222-6af002cd1d9a" />
 <img width="3000" height="2400" alt="03_top_genes_heatmap" src="https://github.com/user-attachments/assets/5515519f-dcbf-4e55-a32f-0d82790cf1cf" />
