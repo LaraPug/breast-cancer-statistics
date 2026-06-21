@@ -54,10 +54,42 @@ This analysis generated the following outputs:
 - **Significant genes identified:** 4,064 (`adj.P.Val < 0.05` and `|logFC| > 1`)
 
 The objective of the dataset was to compare gene expression among molecular subtypes of breast cancer and also against normal tissue.
+
+## Study Cohort
+
+| Sample ID | Group   | Molecular Subtype | Age (years) | Tissue Type    |
+| --------- | ------- | ----------------- | ----------- | -------------- | 
+| S01       | Control | Normal            | [XX]        | Healthy tissue | 
+| S02       | Case    | Luminal A         | [XX]        | Tumor          | 
+| S03       | Case    | Luminal B         | [XX]        | Tumor          | 
+| S04       | Case    | HER2+             | [XX]        | Tumor          | 
+| S05       | Case    | Triple Negative   | [XX]        | Tumor          | 
+
+**Variables included**
+
+* Sample ID: anonymized identifier
+* Group: case/control classification
+* Molecular subtype: breast cancer subtype (if available)
+* Age: age at sampling
+* Tissue Type: biological origin of the sample
+* Notes: additional comments or quality annotations
+
+
 <img width="2400" height="1500" alt="01_expression_distribution" src="https://github.com/user-attachments/assets/45abbc91-16be-4af5-8222-6af002cd1d9a" />
 <img width="3000" height="2400" alt="03_top_genes_heatmap" src="https://github.com/user-attachments/assets/5515519f-dcbf-4e55-a32f-0d82790cf1cf" />
 <img width="2400" height="1500" alt="06_volcano_plot" src="https://github.com/user-attachments/assets/a7b19adc-7e7b-4ae1-b598-cdd51e3b379e" />
 
+## Conclusion
+
+This project explored publicly available breast cancer data through statistical analysis with the objective of identifying patterns across patient groups and generating an interpretable exploratory workflow.
+
+The analysis enabled the organization, visualization, and comparison of variables associated with breast cancer samples, providing an overview of the distribution of observations within the dataset. While this project does not aim to establish clinical conclusions or predictive diagnostic models, it demonstrates how computational and statistical approaches can support biological data exploration and hypothesis generation.
+
+The workflow included data preprocessing, exploratory analysis, descriptive statistics, and graphical representation of the selected variables. Results suggest that differences observed between groups may justify deeper investigation using expanded cohorts and complementary analytical approaches.
+
+Future improvements may include incorporating additional datasets, applying inferential statistical methods, integrating transcriptomic information, and developing interactive dashboards for visualization.
+
+This project was developed as part of my portfolio to strengthen skills in biomedical data analysis, reproducible research practices, and the application of computational tools to healthcare-related datasets.
 
 
 ### Generated Outputs
