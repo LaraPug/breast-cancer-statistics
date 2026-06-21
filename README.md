@@ -55,29 +55,37 @@ This analysis generated the following outputs:
 
 The objective of the dataset was to compare gene expression among molecular subtypes of breast cancer and also against normal tissue.
 
-## Study Cohort
+## Dataset Description
 
-| Sample ID | Group   | Molecular Subtype | Age (years) | Tissue Type    |
-| --------- | ------- | ----------------- | ----------- | -------------- | 
-| S01       | Control | Normal            | [XX]        | Healthy tissue | 
-| S02       | Case    | Luminal A         | [XX]        | Tumor          | 
-| S03       | Case    | Luminal B         | [XX]        | Tumor          | 
-| S04       | Case    | HER2+             | [XX]        | Tumor          | 
-| S05       | Case    | Triple Negative   | [XX]        | Tumor          | 
+Dataset: **GSE45827 (NCBI GEO)**
 
-**Variables included**
+This dataset contains breast tissue gene expression profiles generated using microarray technology and was designed to compare transcriptional patterns across molecular subtypes of breast cancer and normal breast tissue.
 
-* Sample ID: anonymized identifier
-* Group: case/control classification
-* Molecular subtype: breast cancer subtype (if available)
-* Age: age at sampling
-* Tissue Type: biological origin of the sample
-* Notes: additional comments or quality annotations
+### Sample Composition
 
+| Group                                | Number of Samples |
+| ------------------------------------ | ----------------- |
+| Normal breast tissue                 | [N]               |
+| Luminal A                            | [N]               |
+| Luminal B                            | [N]               |
+| HER2-positive                        | [N]               |
+| Triple Negative Breast Cancer (TNBC) | [N]               |
+| Total                                | 155               |
+
+### Variables Included
+
+* GEO Sample ID (GSM accession)
+* Molecular subtype
+* Gene expression intensity
+* Experimental metadata
+* Sample classification
+
+No patient-identifiable information was used in this analysis.
 
 <img width="2400" height="1500" alt="01_expression_distribution" src="https://github.com/user-attachments/assets/45abbc91-16be-4af5-8222-6af002cd1d9a" />
 <img width="3000" height="2400" alt="03_top_genes_heatmap" src="https://github.com/user-attachments/assets/5515519f-dcbf-4e55-a32f-0d82790cf1cf" />
 <img width="2400" height="1500" alt="06_volcano_plot" src="https://github.com/user-attachments/assets/a7b19adc-7e7b-4ae1-b598-cdd51e3b379e" />
+
 
 ## Conclusion
 
@@ -96,6 +104,14 @@ This project was developed as part of my portfolio to strengthen skills in biome
 - Figures: `results/figures/01_expression_distribution.png`, `results/figures/02_sample_means.png`, `results/figures/03_top_genes_heatmap.png`, `results/figures/04_correlation_matrix.png`, `results/figures/05_sample_dendrogram.png`, `results/figures/06_volcano_plot.png`
 - Tables: `results/tables/gene_statistics.csv`, `results/tables/sample_statistics.csv`, `results/tables/statistical_testing_results.csv`, `results/tables/significant_genes.csv`
 - Saved objects: `results/eset_raw.RData`, `results/eset_processed.RData`
+
+## Key Outputs
+
+* Data preprocessing and quality control
+* Exploratory statistical analysis
+* Visualization of sample distributions
+* Comparative analysis across groups
+* Reproducible notebook workflow
 
 ## Notes
 - `run_analysis.R` uses your local R library path for package loading.
